@@ -1,0 +1,62 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            <h2>Inventory System</h2>
+
+            <nav>
+                <a href="admin-dashboard.html" class="active">Dashboard</a>
+                <a href="admin-products.html">Products</a>
+                <a href="#">Categories</a>
+                <a href="#">Suppliers</a>
+                <a href="#">Orders</a>
+                <a href="#">Stock Management</a>
+                <a href="#">Shopkeeper Approvals</a>
+                <a href="#">Reports</a>
+            </nav>
+
+            <button id="logoutBtn">Logout</button>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1>Admin Dashboard</h1>
+                <p>Welcome to Inventory & Sales Management</p>
+            </header>
+
+            <section class="stats">
+                <div class="stat-card">
+                    <h3>Total Products</h3>
+                    <p id="totalProducts">--</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Total Orders</h3>
+                    <p id="totalOrders">--</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Total Sales</h3>
+                    <p id="totalSales">--</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Pending Orders</h3>
+                    <p id="pendingOrders">--</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
